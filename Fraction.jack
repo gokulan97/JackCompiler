@@ -1,0 +1,20 @@
+/* Some common sense was sacrificed in this banking example in order to
+create a nontrivial and easy-to-follow compilation example. */
+class BankAccount {
+// Class variables
+static int nAccounts;
+static int bankCommission; // As a percentage, e.g., 10 for 10 percent
+// account properties
+field int id;
+field String owner;
+field int balance;
+method int commission(int x) { /* Code omitted */ }
+method void transfer(int sum, BankAccount from, int when) {
+var int i, j; // Some local variables
+var Date due; // Date is a user-defined type
+let balance = balance + sum - commission(sum * 5);
+// More code ...
+return;
+}
+// More methods ...
+}
